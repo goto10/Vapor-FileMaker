@@ -5,6 +5,7 @@
 //  Created by Kyle Jessup on 2016-07-20.
 //	Copyright (C) 2016 PerfectlySoft, Inc.
 //
+//	Ported to Vapor by Mike Anelli on 2017-05-01
 //===----------------------------------------------------------------------===//
 //
 // This source file is part of the Perfect.org open source project
@@ -20,12 +21,11 @@
 import PackageDescription
 
 let package = Package(
-	name: "PerfectFileMaker",
+	name: "VaporFileMaker",
 	targets: [],
 	dependencies: [
-		.Package(url: "https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2),
-		.Package(url: "https://github.com/PerfectlySoft/Perfect-CURL.git", majorVersion: 2),
-		.Package(url: "https://github.com/PerfectlySoft/PerfectLib.git", majorVersion: 2)
+		.Package(url: "https://github.com/vapor/vapor.git", majorVersion: 1, minor: 5),
+		.Package(url: "https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2)
 	],
 	exclude: []
 )

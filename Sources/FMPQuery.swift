@@ -17,7 +17,9 @@
 //===----------------------------------------------------------------------===//
 //
 
-import PerfectLib
+import Foundation
+import Vapor
+import HTTP
 
 /// A database action.
 public enum FMPAction: CustomStringConvertible {

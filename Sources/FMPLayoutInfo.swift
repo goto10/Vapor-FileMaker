@@ -17,6 +17,7 @@
 //===----------------------------------------------------------------------===//
 //
 
+import Vapor
 import PerfectXML
 
 /// One of the possible FileMaker field types.
