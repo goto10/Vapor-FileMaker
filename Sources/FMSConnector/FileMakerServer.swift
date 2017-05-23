@@ -71,8 +71,8 @@ public struct FileMakerServer {
         let loginString = "\(userName):\(password)"
         let b64Login = Data(loginString.utf8).base64EncodedString(options: [])
         
-        let drop = Droplet()
-        let fmsResponse =  try drop.client.get(urlString, headers: [.authorization : "Basic \(b64Login)"])
+		let req = Request(method: .get, uri: urlString, headers: [.authorization : "Basic \(b64Login)"])
+		let fmsResponse = try drop.client.respond(to: req)
         
         guard let responseBytes = fmsResponse.body.bytes else {
             throw ClientError.invalidRequestScheme
