@@ -24,7 +24,6 @@ let package = Package(
 	name: "VaporFileMaker",
 	targets: [],
 	dependencies: [
-		.Package(url: "https://github.com/vapor/vapor.git", majorVersion: 1, minor: 5),
 		.Package(url: "https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2)
 	],
 	exclude: []
