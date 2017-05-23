@@ -21,10 +21,8 @@
 import PackageDescription
 
 let package = Package(
-	name: "VaporFileMaker",
-	targets: [],
+	name: "FileMakerConnector",
 	dependencies: [
-		.Package(url: "https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2)
-	],
-	exclude: []
+		.Package(url:"https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2, minor: 0)
+	]
 )
