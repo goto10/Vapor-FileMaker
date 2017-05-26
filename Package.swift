@@ -23,6 +23,7 @@ import PackageDescription
 let package = Package(
 	name: "FileMakerConnector",
 	dependencies: [
+		.Package(url: "https://github.com/vapor/vapor.git", majorVersion: 2),
 		.Package(url:"https://github.com/PerfectlySoft/Perfect-XML.git", majorVersion: 2, minor: 0)
 	]
 )
