@@ -1,6 +1,6 @@
 import XCTest
-@testable import PerfectFileMakerTests
+@testable import FileMakerConnectorTests
 
 XCTMain([
-     testCase(PerfectFileMakerTests.allTests),
+     testCase(FileMakerConnectorTests.allTests),
 ])

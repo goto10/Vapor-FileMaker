@@ -1,5 +1,5 @@
 import XCTest
-@testable import PerfectFileMaker
+@testable import FileMakerConnector
 
 let testHost = "127.0.0.1"
 let testPort = 80
